@@ -12,23 +12,32 @@ body {
     margin: 10px auto;
 }
 
-h1 {
-    color: black;
-    text-align: center;
-    margin-bottom: 0px;
-    line-height: 2em;
-}
-
 article {
     font-size: 1.2em;
     line-height: 1.8em;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
+    border: 1px solid rgba(230, 230, 240, 0.3);
+    border-width: 1px 0;
 }
 
 article p {
+    margin-top: 0;
     margin-bottom: 1.2em;
 }
 
-h1, article {
-    border-bottom: 1px solid rgba(230, 230, 240, 0.3);
+input.search {
+    width: 80%;
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fffef8;
+    box-shadow: 0px 0 0px 1px #f5f2f2;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+mark {
+    background-color: #ffe200;
 }

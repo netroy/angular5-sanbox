@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HighlightQuoteDirective } from './highlight-quote.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighlightQuoteDirective
   ],
   imports: [
     BrowserModule

@@ -1,5 +1,6 @@
-<h1>Highlight directive test</h1>
-<article>
+<input class="search" autofocus [value]="search" (input)="search = $event.target.value">
+
+<article [appHighlightQuote]="search">
 	<p>
 		There was an Old Lady of Prague,
 		Whose language was horribly vague;
