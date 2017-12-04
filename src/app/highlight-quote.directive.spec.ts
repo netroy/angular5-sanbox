@@ -29,9 +29,8 @@ describe('HighlightQuoteDirective', () => {
 
   it('should have three highlighted sections', () => {
     const matches = fixture.nativeElement.querySelectorAll('mark');
-    expect(matches.length).toBe(3);
+    expect(matches.length).toBe(2);
     expect(matches[0].innerText).toBe('Cool');
     expect(matches[1].innerText).toBe('sum');
-    expect(matches[2].innerText).toBe('sum');
   });
 });

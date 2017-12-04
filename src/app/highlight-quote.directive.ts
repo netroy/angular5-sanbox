@@ -1,6 +1,10 @@
 import * as Mark from 'mark.js';
-import { Directive, Input, ElementRef, OnChanges } from '@angular/core';
-import { SimpleChanges } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Directive, Input, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
+
+const markOptions = {
+  separateWordSearch: false,
+  filter: (node, term, totalCounter, counter) => (counter === 0)
+};
 
 @Directive({
   selector: '[appHighlightQuote]'
@@ -25,6 +29,6 @@ export class HighlightQuoteDirective implements OnChanges {
 
   private highlight(search: string) {
     this.marker.unmark();
-    this.marker.mark(search, { separateWordSearch: false });
+    this.marker.mark(search, markOptions);
   }
 }
